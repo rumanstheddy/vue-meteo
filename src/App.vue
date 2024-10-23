@@ -2,4 +2,5 @@
 
 <template>
   <h1>MeteoScope</h1>
+  <input placeholder="Enter a location 📍" />
 </template>
