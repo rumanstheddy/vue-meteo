@@ -5,6 +5,8 @@ const search = ref('')
 </script>
 
 <template>
-  <h1>MeteoScope</h1>
-  <input v-model="search" type="text" placeholder="Enter a location 📍" />
+  <div class="flex flex-col">
+    <h1 class="text-4xl">MeteoScope</h1>
+    <input v-model="search" type="text" placeholder="Enter a location 📍" />
+  </div>
 </template>
