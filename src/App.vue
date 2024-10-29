@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
 const search = ref('')
+
+onMounted(() => {
+  console.log('mounted')
+})
 </script>
 
 <template>
