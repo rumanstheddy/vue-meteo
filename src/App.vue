@@ -1,10 +1,19 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
+import { getLocationsFromSearch } from './apis/openMeteoService'
+import type { LocationData } from './interfaces/LocationData'
 
 const search = ref('')
+// const results = ref([])
+
+const fetchResults = async () => {
+  const data: LocationData = await getLocationsFromSearch('London')
+  console.log(data)
+  return data
+}
 
 onMounted(() => {
-  console.log('mounted')
+  fetchResults()
 })
 </script>
 
